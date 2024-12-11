@@ -12,14 +12,11 @@ type ContaCorrente struct {
 }
 
 func main() {
-	var titular string = "Lucas de Oliveira Neves"
-	var agencia int = 589
-	var contaCorrente int = 123456
-	var saldo float64 = 500.95
 
-	fmt.Println("Titular da conta:", titular)
-	fmt.Println("Agência:", agencia)
-	fmt.Println("Conta Corrente:", contaCorrente)
-	fmt.Println("Saldo atual:", saldo)
+	contaDoLucas := ContaCorrente{titular: "Lucas", saldo: 300}
+	contaDaCamila := ContaCorrente{"Camila", 222, 34434, 400}
+
+	fmt.Println(contaDoLucas)
+	fmt.Println(contaDaCamila)
 
 }
